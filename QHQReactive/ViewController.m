@@ -11,6 +11,7 @@
 #import "QHQSubscriber.h"
 #import "QHQSubject.h"
 #import "UIControl+QHQSignal.h"
+#import "QHQSubscriptingAssignmentTrampoline.h"
 
 @interface ViewController ()
 
@@ -22,7 +23,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self demoFiveUIControl];
+//    [self demoFiveUIControl];
+    [self demoSix];
     
 }
 
@@ -133,6 +135,13 @@
     [demoButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [[demoButton qhq_signalForControlEvents:UIControlEventTouchDown] subscribeNext:^(id x) {
         NSLog(@"%@---被点击了",x);
+    }];
+}
+
+-(void)demoSix {
+    QHQ(self,@"view") = [QHQSignal createSignal:^QHQDispose *(id subscriber) {
+        [subscriber sendNext:@""];
+        return nil;
     }];
 }
 

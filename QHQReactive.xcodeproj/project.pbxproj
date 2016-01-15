@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F3F0FFF1C48835D008F696B /* QHQSubscriptingAssignmentTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F0FFE1C48835D008F696B /* QHQSubscriptingAssignmentTrampoline.m */; };
 		7FF47FDA1C4340D00030879A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF47FD91C4340D00030879A /* main.m */; };
 		7FF47FDD1C4340D00030879A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF47FDC1C4340D00030879A /* AppDelegate.m */; };
 		7FF47FE01C4340D00030879A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF47FDF1C4340D00030879A /* ViewController.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F3F0FFD1C48835D008F696B /* QHQSubscriptingAssignmentTrampoline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHQSubscriptingAssignmentTrampoline.h; sourceTree = "<group>"; };
+		7F3F0FFE1C48835D008F696B /* QHQSubscriptingAssignmentTrampoline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHQSubscriptingAssignmentTrampoline.m; sourceTree = "<group>"; };
 		7FF47FD51C4340D00030879A /* QHQReactive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QHQReactive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF47FD91C4340D00030879A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FF47FDB1C4340D00030879A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 				7FF480161C4340ED0030879A /* QHQSubscrib.h */,
 				7FF480171C4340ED0030879A /* QHQSubscriber.h */,
 				7FF480181C4340ED0030879A /* QHQSubscriber.m */,
+				7F3F0FFD1C48835D008F696B /* QHQSubscriptingAssignmentTrampoline.h */,
+				7F3F0FFE1C48835D008F696B /* QHQSubscriptingAssignmentTrampoline.m */,
 				7FF480191C4340ED0030879A /* UI */,
 			);
 			path = QHQ_RAC;
@@ -330,6 +335,7 @@
 				7FF47FE01C4340D00030879A /* ViewController.m in Sources */,
 				7FF47FDD1C4340D00030879A /* AppDelegate.m in Sources */,
 				7FF480221C4340ED0030879A /* UIControl+QHQSignal.m in Sources */,
+				7F3F0FFF1C48835D008F696B /* QHQSubscriptingAssignmentTrampoline.m in Sources */,
 				7FF4801F1C4340ED0030879A /* QHQSignal.m in Sources */,
 				7FF4801E1C4340ED0030879A /* QHQReplaySubject.m in Sources */,
 				7FF47FDA1C4340D00030879A /* main.m in Sources */,
@@ -556,6 +562,7 @@
 				7FF480041C4340D10030879A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FF480051C4340D10030879A /* Build configuration list for PBXNativeTarget "QHQReactiveTests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +571,7 @@
 				7FF480071C4340D10030879A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FF480081C4340D10030879A /* Build configuration list for PBXNativeTarget "QHQReactiveUITests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +580,7 @@
 				7FF4800A1C4340D10030879A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
