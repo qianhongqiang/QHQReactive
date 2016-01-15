@@ -28,7 +28,9 @@
 }
 
 - (void)setObject:(QHQSignal *)signal forKeyedSubscript:(NSString *)keyPath {
-    
+    [signal subscribeNext:^(id x) {
+        [self.target setValue:x forKey:keyPath];
+    }];
 }
 
 @end

@@ -139,8 +139,8 @@
 }
 
 -(void)demoSix {
-    QHQ(self,@"view") = [QHQSignal createSignal:^QHQDispose *(id subscriber) {
-        [subscriber sendNext:@""];
+    QHQ(self.view,@"backgroundColor") = [QHQSignal createSignal:^QHQDispose *(id subscriber) {
+        [subscriber sendNext:[UIColor yellowColor]];
         return nil;
     }];
 }
